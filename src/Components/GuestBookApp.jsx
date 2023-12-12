@@ -2,22 +2,32 @@ import { useState } from "react";
 import GuestBookForm from "./GuestBookForm";
 
 function GuestBookApp() {
-    const [listUsers, setListUsers] = useState([{}])
+    const [listUsers, setListUsers] = useState([])
 
     function addToList() {
-        
-        listUsers.push(listUsers)
+        const newUser = { name: listUsers.name, pays: listUsers.pays, message: listUsers.message }
+        listUsers.push([...listUsers, newUser])
+    }
+
+    function reset() {
+        setListUsers([])
+        console.log(listUsers)
     }
 
     return (
         <>
-            <GuestBookForm setListUsers={setListUsers} addToList={addToList} />
-            <ul>
-                {listUsers.map((list,index) => (
-                    <li key={index}>{list.name}</li>
-                ))}
-                {        console.log(listUsers)}
-            </ul>
+            <GuestBookForm setListUsers={setListUsers} reset={reset} addToList={addToList} listUsers={listUsers} />
+            {
+                listUsers.length > 0 &&
+                <div>
+                    <h1 className="text-2xl font-bold py-4">Messages: </h1>
+                    <ul className="py-3 px-2 bg-slate-100 space-y-3">
+                        {listUsers.map((list, index) => (
+                            <li key={index}><strong>{list.name}</strong>  ({list.pays}): {list.message}</li>
+                        ))}
+                    </ul>
+                </div>
+            }
         </>
     );
 }

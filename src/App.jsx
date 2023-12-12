@@ -27,7 +27,9 @@ function App() {
         <TaskList tasks={tasks} />
       </div> */}
       {/* <MyButton/> */}
-      <GuestBookApp />
+      <div className='container m-auto my-5'>
+        <GuestBookApp />
+      </div>
     </>
   );
 }
