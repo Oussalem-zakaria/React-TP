@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d93615a2.css",
+    "main.js": "/static/js/main.533d3145.js",
+    "static/media/avatar.jpg": "/static/media/avatar.d901264ae6680a6dc835.jpg",
+    "static/media/instagram.png": "/static/media/instagram.de648ccdbd2e455e6249.png",
+    "static/media/facebook.png": "/static/media/facebook.fa8dfe9df21f0650d850.png",
+    "static/media/twitter.png": "/static/media/twitter.38e4a5df9c01e69ef2b9.png",
+    "static/media/undraw_content_team_re_6rlg.svg": "/static/media/undraw_content_team_re_6rlg.e58b18a526c2045ff347c8a52a168fbb.svg",
+    "static/media/undraw_welcome_cats_thqn.svg": "/static/media/undraw_welcome_cats_thqn.2bed810e971678579e6274bc4d06588d.svg",
+    "static/media/undraw_projections_re_ulc6.svg": "/static/media/undraw_projections_re_ulc6.75fce666cad57f103981bb32de80fa19.svg",
+    "static/media/undraw_join_re_w1lh.svg": "/static/media/undraw_join_re_w1lh.92444928e5081e64bc6612a32256751d.svg",
+    "index.html": "/index.html",
+    "main.d93615a2.css.map": "/static/css/main.d93615a2.css.map",
+    "main.533d3145.js.map": "/static/js/main.533d3145.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d93615a2.css",
+    "static/js/main.533d3145.js"
+  ]
+}
