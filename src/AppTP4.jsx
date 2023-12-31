@@ -1,6 +1,9 @@
 import React, { createContext, useContext, useState } from 'react';
 import './index.css';
 import GuestBookApp from './TP3/GuestBookApp';
+import ThemeProvider from './TP4/Context2/ThemeProvider';
+import ThemedMessage from './TP4/Context2/ThemedMessage';
+import ThemedButton from './TP4/Context2/ThemedButton';
 
 export const Appcontext = createContext();
 
@@ -12,7 +15,7 @@ export const useThemeApp = () => {
   return context
 }
 
-function App() {
+function AppTP4() {
   const [theme, setTheme] = useState("light")
 
   const toogleTheme = async (e) => {
@@ -22,13 +25,16 @@ function App() {
 
   return (
     <>
-      <div className={`px-5 h-screen ${ theme === "light" ? "" : "bg-neutral-900 text-white"}`}>
-        <Appcontext.Provider value={{ theme, toogleTheme }}>
-          <GuestBookApp />
-        </Appcontext.Provider>
+      <div className={`px-5 py-6 h-screen`}>
+        <ThemeProvider theme={theme} toogleTheme={toogleTheme}>
+          <div className="flex flex-col items-center justify-center space-y-3">
+          <ThemedButton />
+          <ThemedMessage />
+          </div>
+        </ThemeProvider>
       </div>
     </>
   );
 }
 
-export default App;
+export default AppTP4;
