@@ -25,12 +25,6 @@ The application will be available at `http://localhost:3000`.
 ## Features
 
 User Authentication: Implement sign up, sign in, and sign out functionality.
+
 User Profile: Allow users to view and update their profile information.
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
