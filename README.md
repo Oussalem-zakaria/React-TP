@@ -1,4 +1,4 @@
-# React TP
+# React JS
 
 This project is a practical work (TP) done in React.js. It's a simple web application that demonstrates the use of various React concepts and features.
 
